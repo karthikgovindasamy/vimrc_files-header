@@ -1,4 +1,4 @@
-autocmd BufNewFile *.py r /root/jenkins/pythonheader.txt
+autocmd BufNewFile *.py r /root/pythonheader.txt
 autocmd bufnewfile *.py exe "1," . 10 . "g/File Name:.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.py exe "1," . 10 . "g/Creation Date:.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.py execute "normal ma"
@@ -6,7 +6,7 @@ autocmd Bufwritepre,filewritepre *.py exe "1," . 10 . "g/Last Modified :.*/s/Las
 autocmd bufwritepost,filewritepost *.py execute "normal `a"
 
 
-autocmd BufNewFile *.ksh r /root/jenkins/ksh_header.txt
+autocmd BufNewFile *.ksh r /root/ksh_header.txt
 autocmd bufnewfile *.ksh exe "1," . 10 . "g/File Name:.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.ksh exe "1," . 10 . "g/Creation Date:.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.ksh execute "normal ma"
@@ -14,21 +14,21 @@ autocmd Bufwritepre,filewritepre *.ksh exe "1," . 10 . "g/Last Modified :.*/s/La
 autocmd bufwritepost,filewritepost *.ksh execute "normal `a"
 
 
-autocmd BufNewFile *.sh r /root/jenkins/sh_header.txt
+autocmd BufNewFile *.sh r /root/sh_header.txt
 autocmd bufnewfile *.sh exe "1," . 10 . "g/File Name:.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.sh exe "1," . 10 . "g/Creation Date:.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.sh execute "normal ma"
 autocmd Bufwritepre,filewritepre *.sh exe "1," . 10 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified: " .strftime("%c")
 autocmd bufwritepost,filewritepost *.sh execute "normal `a"
 
-autocmd BufNewFile *.sh r /root/jenkins/sh_header.txt
+autocmd BufNewFile *.sh r /root/sh_header.txt
 autocmd bufnewfile *.sh exe "1," . 10 . "g/File Name:.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.sh exe "1," . 10 . "g/Creation Date:.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.sh execute "normal ma"
 autocmd Bufwritepre,filewritepre *.sh exe "1," . 10 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified: " .strftime("%c")
 autocmd bufwritepost,filewritepost *.sh execute "normal `a"
 
-autocmd BufNewFile *.c r /root/jenkins/c_header.txt
+autocmd BufNewFile *.c r /root/c_header.txt
 autocmd bufnewfile *.c exe "1," . 10 . "g/File Name:.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.c exe "1," . 10 . "g/Creation Date:.*/s//Creation Date : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.c execute "normal ma"
